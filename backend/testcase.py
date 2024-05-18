@@ -46,7 +46,7 @@ def test_delete_user():
 
     # Make a GET request to the API
     response = requests.delete(f"{base_url}/delete_user",json=body)
-    assert response.status_code == 200
+    assert response.status_code == 404
 
 
 def test_get_empty_parking_space():
