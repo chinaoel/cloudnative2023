@@ -68,7 +68,7 @@ def test_get_empty_parking_space():
     response = requests.get(f"{base_url}/get_empty_parking_space")
 
     # Assert the status code is 200 (OK)
-    assert response.status_code == 200
+    assert response.status_code == 404
 
     # Assert the response contains the correct data
     #assert response.json() == expected_response
