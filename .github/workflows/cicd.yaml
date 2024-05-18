@@ -21,7 +21,7 @@ jobs:
           pip install -r backend/requirements.txt
       - name: Run Flask Application
         run: |
-          python backend/app.py
+          python backend/app.py & sleep 5
       - name: Test with pytest
         run: |
           pytest backend/testcase.py
